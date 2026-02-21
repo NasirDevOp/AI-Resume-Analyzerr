@@ -1,0 +1,15 @@
+# Core
+flask>=2.3.0
+pdfplumber>=0.10.0
+
+# spaCy NLP (run: python -m spacy download en_core_web_sm after installing)
+spacy>=3.7.0
+
+# Claude AI suggestions
+anthropic>=0.25.0
+
+# PDF Report export
+fpdf2>=2.7.0
+
+# Already included in stdlib (no install needed):
+# sqlite3, hashlib, secrets, json, re, math, collections, datetime
