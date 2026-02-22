@@ -787,3 +787,7 @@ if __name__ == '__main__':
     print(f"{'='*50}\n")
     port = int(os.environ.get("PORT", 8080))
     app.run(debug=False, host="0.0.0.0", port=port)
+else:
+    # This runs when gunicorn starts
+    os.makedirs('uploads', exist_ok=True)
+    init_db()
