@@ -785,5 +785,5 @@ if __name__ == '__main__':
     print(f"  PDF Export : {'✅ Active' if FPDF_AVAILABLE else '⚠️  Not installed (pip install fpdf2)'}")
     print(f"  Running at : http://localhost:5000")
     print(f"{'='*50}\n")
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 8080))
     app.run(debug=False, host="0.0.0.0", port=port)
